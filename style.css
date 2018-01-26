@@ -44,7 +44,7 @@ body
 }
 #zapis
 {
-   float: left;
+   
     width:1900px;
         height:1060px;
          border: 1px solid white;
@@ -53,11 +53,28 @@ body
 }
 #grafik
 {
-   float: left;
+   
     width:1900px;
         height:1060px;
          border: 1px solid white;
        
   
 }
-
+#proverka-talona
+{
+   
+    width:1900px;
+        height:1060px;
+         border: 1px solid white;
+       
+  
+}
+#pomow
+{
+   
+    width:1900px;
+        height:1060px;
+         border: 1px solid white;
+       
+  
+}
