@@ -1,0 +1,53 @@
+body
+{
+     background-color: #222222 ;
+    
+}
+ nav  a {
+  color: #818181;
+  text-decoration: none;
+}   
+#block-topleft
+{
+   float: left;
+    width:949px;
+        height:530px;
+         border: 1px solid white;
+          
+        font: 12px  sans-serif;    
+  
+}
+
+#block-topright
+{
+  
+    width:950px;
+        height:530px;
+         border: 1px solid white;
+         margin-left: 951px;
+                 
+}
+#block-left
+{
+   float: left;  
+     width:950px;
+        height:530px;
+         border: 1px solid white;
+    }
+#block-right
+{
+     
+  width:950px;
+        height:530px;
+         border: 1px solid white;
+         margin-left: 950px;
+}
+#zapis
+{
+   float: left;
+    width:1900px;
+        height:1060px;
+         border: 1px solid white;
+       
+  
+}
