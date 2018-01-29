@@ -4,10 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Proekt-1</title>
-        
-        <link href="style.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width">
-    
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
     <nav>
