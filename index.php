@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Proekt-1</title>
         <meta name="viewport" content="width=device-width">
+        
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>

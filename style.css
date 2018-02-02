@@ -51,14 +51,14 @@ body
 }
                                             
 #id-polis{ 
-border:1px solid green;
+border:1px solid #f9de53;
 padding-left:  8px;
 outline: black;
 margin-left:400px;
 box-sizing:border-box; 
 font-size: 60px;   
 width:1300px;
-        height:160px;
+height:160px;
 color:#818181;
 }
 
@@ -90,3 +90,50 @@ color:#818181;
        
   
 }
+#knopka
+{
+    
+    width:100px;
+        height:10px;
+}
+
+
+.vk
+{
+    width: 1606px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.vk .row{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    clear: both;
+}
+.vk .key{
+    width: 140px;
+    height: 140px;
+    float: left;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 6px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 140px;
+     /*background: linear-gradient(to top, #fce25b, #ecc92b);*/
+    box-shadow:
+      -1px 0px rgb(220,195,35), -1px 1px rgb(192,167,7),
+      -2px 1px rgb(219,194,34), -2px 2px rgb(191,166,6),
+      -3px 2px rgb(218,193,33), -3px 3px rgb(190,165,5),
+      -4px 3px rgb(217,192,32), -4px 4px rgb(189,164,4),
+      -5px 4px rgb(216,191,31), -5px 5px rgb(188,163,3),
+      -6px 5px rgb(215,190,30), -6px 6px rgb(187,162,2);
+}
+.vk .key:hover{
+    background: black;
+}
+.vk .c
+{
+    width: 100px;
+}
+
