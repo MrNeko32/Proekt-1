@@ -1,5 +1,5 @@
 $(document).ready(function(){
-      alert( "zdarova banditi" );
+//      alert( "zdarova banditi" );
     
     var knopka;
          
@@ -7,9 +7,9 @@ $(document).ready(function(){
    {
       knopka = $(this).find('span').text();
        if( knopka ==='Очистить' ){
-                $('#xd').val( $('#xd').val().substr(0, $('#xd').val().length - 32) ).focus();
+                $('#username').val( $('#username').val().substr(0, $('#username').val().length - 1) ).focus();
             }else{
-                $('#xd').val( $('#xd').val() + knopka ).focus(); 
+                $('#username').val( $('#username').val() + knopka ).focus(); 
             }
              
             

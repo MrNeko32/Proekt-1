@@ -16,7 +16,7 @@
                  font-size:100px"
                  >
                  
-                  <a href="zapis.html">Записаться</a>
+                  <a href="zapis.php">Записаться</a>
                  
               </h1>
         
@@ -37,7 +37,7 @@
                  >
                <a href="Proverka talona.html">Проверка талона</a>
                
-               
+                
             </h1>
             </div>
         <div id="block-right">
@@ -48,7 +48,7 @@
                 <a href="pomow.html">Помощь</a>
                  
             </h1>
-        
+
         
         </div>     
     </nav>
