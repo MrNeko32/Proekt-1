@@ -2,6 +2,7 @@
  
 session_start();
 
+
 if(!isset($_SESSION["session_username"])){
 header("location:login.php");
 }
@@ -13,7 +14,7 @@ else{
 ?>
 <!DOCTYPE html>
     <head>
-        <title>Просмотреть график</title>
+        <title>123</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet" type="text/css"/>
@@ -40,12 +41,11 @@ else{
 <div id="kalendar">
                    <form id="vibor_dati" method="post" name="kalendar">
 <h4 style="-webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;">Выберите дату </h4>   
+    -webkit-margin-after: 0em;">Выберите время </h4>   
        
-    <input type="date" name="calendar" value="2018-02-13"
-    max="2018-03-12" min="2018-02-01" style="width: 500px ;">
+    <input type="time" name="time" value="<?=gmdate("H:i", time() + (3600*3));?>"  min= "08:00" max="20:00"style="width: 500px ;">
        
-   <input type="submit" value="Выбрать" name="date">
+   <input type="submit" value="Выбрать" name="button_time">
   </form>
         </div>
          
@@ -65,17 +65,24 @@ else{
 include_once('includes/connection.php');
 
 
- if(isset($_POST["date"]))
+
+
+
+
+
+ if(isset($_POST["button_time"]))
  {
-    $date=htmlspecialchars($_POST['calendar']);
+    $time=htmlspecialchars($_POST['time']);
     
  }
-if(!empty($date)) {
+if(!empty($time)) {
     //$sess_uname = $_SESSION['session_username'];
-    $sqlraw = "UPDATE `xdd` SET `Date`='".$date."' WHERE `FI`='".$_SESSION['session_username']."'";
+    $sqlraw = "UPDATE `xdd` SET `Time`='".$time."' WHERE `FI`='".$_SESSION['session_username']."'";
     mysqli_query($con, $sqlraw);
-    header("location:time-page.php");
+    header("location:/Poliklinika/logout.php");
 }
+
+
          
  ?>   
        

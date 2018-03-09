@@ -17,7 +17,7 @@
 <div id="id-polis">
                   
 <b>Введите номер полиса</b>
-                     <form action="" id="loginform" method="post" name="zapis">
+                     <form  id="loginform" method="post" name="zapis">
 <input id="username" name="username" style="font-size:50px;  width:1200px; height: 50px;" type=text  placeholder="123456789101112" autofocus>
 <input type="submit" value=">" name="login" style="font-size:50px;" >
                                                                                      
@@ -90,7 +90,7 @@ $dbFI=$row['FI'];
 if($username == $dbusername) {
 
 $_SESSION['session_username']=$dbFI;	 
-header("Location: polis_page.php");
+header("Location:polis_page.php");
 exit();
 
 }

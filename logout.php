@@ -2,5 +2,5 @@
 session_start();
 unset($_SESSION['session_username']);
 session_destroy();
-header("location:zapis.php");
+header("location:/Poliklinika/index.php");
 ?>
