@@ -1,6 +1,6 @@
 <?php
-$DB_SERVER = "localhost";
-$DB_USER = "root";
-$DB_PASS = "qwerty32ebalalol";
+$DB_SERVER = "s.regela.ru";
+$DB_USER = "student";
+$DB_PASS = "Student!@#1";
 $DB_NAME = "nomera_polisov";
 ?>

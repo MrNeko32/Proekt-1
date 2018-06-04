@@ -38,16 +38,29 @@ else{
                 <h2>Вы   <span><?php echo $_SESSION['session_username'];?>  </span></h2>
 	<p>Выход<a href="logout.php" style="color:green; font-size: 32px;">&#160;&#160;здесь</a><p>
 </div>
-<div id="kalendar">
-                   <form id="vibor_dati" method="post" name="kalendar">
+<div id="vrachi">
+                 <form id="vibor_vracha" method="post" name="spisok_vrachey">
 <h4 style="-webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;">Выберите время </h4>   
-       
-    <input type="time" name="time" value="<?=gmdate("H:i", time() + (3600*3));?>"  min= "08:00" max="20:00"style="width: 500px ;" >
-       
-   <input type="submit" value="Выбрать" name="button_time">
-  </form>
-        </div>
+    -webkit-margin-after: 0em;">Выберите Врача </h4>   
+    <select name="selphp"  style="width: 500px;" >
+ 
+<option value="Кардиолог">Кардиолог</option>
+ 
+<option value="Терапевт">Терапевт</option>
+ 
+<option value="Офтальмолог">Офтальмолог</option>
+ 
+<option value="Окулист">Окулист</option>
+ 
+<option value="Невролог">Невролог</option>
+
+<option value="Гинеколог">Невролог</option>
+ 
+</select>
+      <input type="submit" value="Выбрать"  name="vrach_btn">
+   </form>
+</div>
+
          
             <h3 style="text-align:left;
                 margin-left: 32px;
@@ -70,21 +83,17 @@ include_once('includes/connection.php');
 
 
 
- if(isset($_POST["button_time"]))
+ if(isset($_POST["vrach_btn"]))
  {
-    $time=htmlspecialchars($_POST['time']);
+    $selphp=htmlspecialchars($_POST['selphp']);
     
  }
-if(!empty($time)) {
+if(!empty($selphp)) {
     //$sess_uname = $_SESSION['session_username'];
-    $sqlraw = "UPDATE `xdd` SET `Time`='".$time."' WHERE `FI`='".$_SESSION['session_username']."'";
+    $sqlraw = "UPDATE `xdd` SET `Vrach`='".$selphp."' WHERE `FI`='".$_SESSION['session_username']."'";
     mysqli_query($con, $sqlraw);
-    header("location:/Poliklinika/vrach_page.php");
+    header("location:/Poliklinika/logout.php");
 }
+?>  
 
-
-         
- ?>   
-       
-<?php
 

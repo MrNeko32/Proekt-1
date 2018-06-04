@@ -95,10 +95,10 @@ exit();
 
 }
 } else {
-echo "Predlagayu poyti nahuy!";
+echo "Введенные данные не верны";
 }
 } else {
-$message = "Pls zapolni vse bratik :*!";
+$message = "Заполнены не все поля";
 }
 }
 ?>
