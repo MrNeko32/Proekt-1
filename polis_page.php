@@ -43,12 +43,12 @@ else{
     -webkit-margin-after: 0em;">Выберите дату </h4>   
        
     <input type="date" name="calendar" value="2018-02-13"
-    max="2018-03-12" min="2018-02-01" style="width: 500px ;">
+    max="2018-06-09" min="2018-02-01" style="width: 500px ;">
        
    <input type="submit" value="Выбрать" name="date">
   </form>
         </div>
-         
+
             <h3 style="text-align:left;
                 margin-left: 32px;
       margin-top: 600px;

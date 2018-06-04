@@ -26,7 +26,7 @@
                  margin-top: 20%;
                  font-size:100px"
                  >
-                <a href="/PoliklinikaGrafik.html">Посмотреть график</a>
+                <a href="/Poliklinika/Grafik.html">Посмотреть график</a>
                  
             </h1>
             </div>
@@ -35,7 +35,7 @@
                  margin-top: 20%;
                  font-size:100px"
                  >
-               <a href="/PoliklinikaProverka talona.html">Проверка талона</a>
+               <a href="/Poliklinika/Proverka_talona.html">Проверка талона</a>
                
                 
             </h1>
@@ -45,7 +45,7 @@
                  margin-top: 20%;
                  font-size:100px"
                  >
-                <a href="/Poliklinikapomow.html">Помощь</a>
+                <a href="/Poliklinika/pomow.html">Помощь</a>
                  
             </h1>
 
